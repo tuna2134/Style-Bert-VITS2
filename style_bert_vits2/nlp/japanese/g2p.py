@@ -77,6 +77,7 @@ def g2p(
 
     # 最初と最後に `_` 記号を追加、アクセントは 0（低）、word2ph もそれに合わせて追加
     phone_tone_list = [("_", 0)] + phone_tone_list + [("_", 0)]
+    print(phone_tone_list);
     word2ph = [1] + word2ph + [1]
 
     phones = [phone for phone, _ in phone_tone_list]
